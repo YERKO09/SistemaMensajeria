@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;600;700;800&display=swap');
+
+// var-colors
+$BlueBell: #a491d2;
+$Soap: #cdc3e6;
+$platinum: #E8EBE4;
+$DarkJungle: #1b1f21;
+$OldSilver: #828485;
+$Gray: #bcc1bb;
+
+//var-font-size
+$large: 45px;
+$medium: 16px;
+$small: 14px;
+$x-small: 10px;
+
+//font-family
+$roboto: 'Roboto', sans-serif;
+$open-sans: 'Open Sans', sans-serif; 
+
+// estructura flex
+@mixin flex-general($direction, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: $justify;
+}
+
+// bordes de img: usuario y contactos.
+@mixin borde-img(){
+    border: {
+        radius:100%;
+        style: solid;
+        width: 3px;
+        color: $platinum; 
+        }
+        &:hover {
+            border: {
+                color: $Soap;                     
+                }
+        }
+}
+
+//estilos de texto
+@mixin font($familia, $tamano, $peso){
+    font: {
+        family: $familia;
+        size: $tamano;
+        weight: $peso;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $DarkJungle;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+.mainSectionFlex{
+    display: flex;
+    .seccion-contactos{ 
+        flex-basis: 25%;
+        border-right: solid 1px $Gray; 
+        .main-usuario{
+            @include flex-general(row, space-around); 
+            padding: 15px 30px;
+            border-bottom: 2px solid $Gray;
+            .datos-main-usuario{
+                @include flex-general(row, start); 
+                flex-basis: 50%;
+                gap: 20px;
+                img{
+                    width: $large;
+                    @include borde-img();
+                }
+
+                .desc{
+                    .nombre{
+                        @include font($roboto, $medium, 600);
+                    }
+                    .estado{
+                        @include font($roboto, $x-small, 300);
+                        color: $Gray;
+                    }
+                }
+            }
+            .menu{
+                @include flex-general(row, end); 
+                flex-basis: 50%; 
+                gap: 20px;
+                i{
+                    font-size: 20px;
+                    color: $OldSilver;
+                    &:hover{
+                        color: $Gray;
+                    }
+                }
+            }
+        }
+        .nuevo-chat{
+            @include flex-general(row, center);
+            padding: 50px;
+            border-bottom: 2px solid $Gray;
+            button{
+                width: 200px;
+                padding: 20px;
+                color:white;
+                background-color: $BlueBell;
+                border: 0px;
+                &:hover{
+                    background-color: $Soap;
+                }
+                @include font($roboto, $medium, 300);
+            }
+        }
+
+        .contactos-amigos{
+            padding: 15px 30px;
+            border-bottom: 2px solid #bcc1bb;
+            .datos-contactos{
+                @include flex-general(row, start);
+                gap: 20px;
+                img{
+                    width: 60px;
+                    @include borde-img(); 
+                }
+                .desc{
+                    .nombre{
+                        @include font($roboto, $medium, 600);
+                    }
+                    .presentacion{
+                        @include font($roboto, $small, 400);
+                    }
+                }
+            } 
+        }
+    }
+    .seccion-logo{
+        @include flex-general(column, center);
+        flex-basis: 75%;
+        gap: 40px;
+        div img{
+            object-fit: cover;
+            width: 250px;
+            border-radius: 10px;
+        }
+        .textos{
+            text-align: center;
+            h1{
+                @include font($roboto, $large, 600); 
+            }
+            p{
+                @include font($open-sans, $medium, 500);
+            }
+        }
+    }
+}

@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #1b1f21;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainSectionFlex {
+  display: flex;
+}
+.mainSectionFlex .seccion-contactos {
+  flex-basis: 25%;
+  border-right: solid 1px #bcc1bb;
+}
+.mainSectionFlex .seccion-contactos .main-usuario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 30px;
+  border-bottom: 2px solid #bcc1bb;
+}
+.mainSectionFlex .seccion-contactos .main-usuario .datos-main-usuario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  flex-basis: 50%;
+  gap: 20px;
+}
+.mainSectionFlex .seccion-contactos .main-usuario .datos-main-usuario img {
+  width: 45px;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #E8EBE4;
+}
+.mainSectionFlex .seccion-contactos .main-usuario .datos-main-usuario img:hover {
+  border-color: #cdc3e6;
+}
+.mainSectionFlex .seccion-contactos .main-usuario .datos-main-usuario .desc .nombre {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.mainSectionFlex .seccion-contactos .main-usuario .datos-main-usuario .desc .estado {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  color: #bcc1bb;
+}
+.mainSectionFlex .seccion-contactos .main-usuario .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  flex-basis: 50%;
+  gap: 20px;
+}
+.mainSectionFlex .seccion-contactos .main-usuario .menu i {
+  font-size: 20px;
+  color: #828485;
+}
+.mainSectionFlex .seccion-contactos .main-usuario .menu i:hover {
+  color: #bcc1bb;
+}
+.mainSectionFlex .seccion-contactos .nuevo-chat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  border-bottom: 2px solid #bcc1bb;
+}
+.mainSectionFlex .seccion-contactos .nuevo-chat button {
+  width: 200px;
+  padding: 20px;
+  color: white;
+  background-color: #a491d2;
+  border: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.mainSectionFlex .seccion-contactos .nuevo-chat button:hover {
+  background-color: #cdc3e6;
+}
+.mainSectionFlex .seccion-contactos .contactos-amigos {
+  padding: 15px 30px;
+  border-bottom: 2px solid #bcc1bb;
+}
+.mainSectionFlex .seccion-contactos .contactos-amigos .datos-contactos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.mainSectionFlex .seccion-contactos .contactos-amigos .datos-contactos img {
+  width: 60px;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #E8EBE4;
+}
+.mainSectionFlex .seccion-contactos .contactos-amigos .datos-contactos img:hover {
+  border-color: #cdc3e6;
+}
+.mainSectionFlex .seccion-contactos .contactos-amigos .datos-contactos .desc .nombre {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.mainSectionFlex .seccion-contactos .contactos-amigos .datos-contactos .desc .presentacion {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.mainSectionFlex .seccion-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 75%;
+  gap: 40px;
+}
+.mainSectionFlex .seccion-logo div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 250px;
+  border-radius: 10px;
+}
+.mainSectionFlex .seccion-logo .textos {
+  text-align: center;
+}
+.mainSectionFlex .seccion-logo .textos h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+}
+.mainSectionFlex .seccion-logo .textos p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
