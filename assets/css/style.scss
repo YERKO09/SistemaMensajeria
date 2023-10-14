@@ -133,7 +133,7 @@ main{
                     .nombre{
                         @include font($roboto, $medium, 600);
                     }
-                    .presentacion{
+                    .last-msg{
                         @include font($roboto, $small, 400);
                     }
                 }
