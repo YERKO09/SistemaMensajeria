@@ -117,7 +117,7 @@ main {
   font-size: 16px;
   font-weight: 600;
 }
-.mainSectionFlex .seccion-contactos .contactos-amigos .datos-contactos .desc .presentacion {
+.mainSectionFlex .seccion-contactos .contactos-amigos .datos-contactos .desc .last-msg {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -131,8 +131,7 @@ main {
   gap: 40px;
 }
 .mainSectionFlex .seccion-logo div img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 250px;
   border-radius: 10px;
 }
