@@ -131,7 +131,8 @@ main {
   gap: 40px;
 }
 .mainSectionFlex .seccion-logo div img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 250px;
   border-radius: 10px;
 }
